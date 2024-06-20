@@ -27,10 +27,7 @@ export function MobileMenu() {
           <Menu className="h-6 w-6 text-primary" />
         </Button>
       </SheetTrigger>
-      <SheetContent
-        side="left"
-        className="flex h-full flex-col gap-0 p-0 md:hidden"
-      >
+      <SheetContent side="left" className="flex flex-col gap-0 p-0 md:hidden">
         <SheetHeader className="flex h-16 flex-row items-center justify-start border-b p-4">
           <SheetClose asChild>
             <SiteLogoHeader />
