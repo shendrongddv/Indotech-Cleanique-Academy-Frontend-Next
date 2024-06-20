@@ -15,3 +15,17 @@ export const SiteLogoHeader = () => {
     </Link>
   );
 };
+
+export const SiteLogoFooter = () => {
+  return (
+    <Link href="/" className="h-16 w-auto">
+      <Image
+        src="/logo.png"
+        alt="Cleanique Academy"
+        height={577}
+        width={1600}
+        className="h-full w-auto"
+      />
+    </Link>
+  );
+};
