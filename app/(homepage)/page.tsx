@@ -1,13 +1,15 @@
 import { SiteLogoFooter } from "@/components/site-logo";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { Box, Paperclip } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HomepageLayout = () => {
   return (
     <>
       {/* HERO */}
-      <section className="px-4 py-20">
+      <section className="px-4 py-36">
         <div className="container">
           <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
             {/* ## */}
@@ -23,14 +25,20 @@ const HomepageLayout = () => {
               </p>
 
               <div className="mt-4 flex flex-col gap-2 md:flex-row">
-                <Button>
+                <Link
+                  href="#program"
+                  className={cn(buttonVariants({ variant: "default" }))}
+                >
                   <Box className="mr-2 h-4 w-4" />
                   Program Kami
-                </Button>
-                <Button variant="outline">
+                </Link>
+                <Link
+                  href="#syarat"
+                  className={cn(buttonVariants({ variant: "outline" }))}
+                >
                   <Paperclip className="mr-2 h-4 w-4" />
                   Persyaratan
-                </Button>
+                </Link>
               </div>
             </div>
 
@@ -40,7 +48,7 @@ const HomepageLayout = () => {
       </section>
 
       {/* PROGRAMS */}
-      <section className="bg-slate-50 px-4 py-20">
+      <section id="program" className="bg-slate-50 px-4 py-20">
         <div className="container flex flex-col items-center gap-8 text-center">
           <h2 className="text-2xl font-bold md:text-4xl">Program Unggulan</h2>
         </div>

@@ -1,5 +1,5 @@
 import { SiteLogoHeader } from "@/components/site-logo";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -12,12 +12,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { LogInIcon, Menu } from "lucide-react";
+import Link from "next/link";
 
 export function MobileMenu() {
   return (
     <Sheet>
-      <SheetTrigger asChild>
+      <SheetTrigger asChild className="flex md:hidden">
         <Button
           variant="secondary"
           className="flex aspect-square items-center justify-center p-0"
@@ -37,7 +39,16 @@ export function MobileMenu() {
         {/* MENU */}
         <SheetFooter className="mt-auto border-t p-4">
           <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
+            <Link
+              href="/account"
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "hidden md:flex",
+              )}
+            >
+              <LogInIcon className="mr-2 h-4 w-4" />
+              Daftar
+            </Link>
           </SheetClose>
         </SheetFooter>
       </SheetContent>
