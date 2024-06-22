@@ -1,10 +1,10 @@
-import { SiteLogoFooter } from "@/components/site-logo";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Box, Check, Paperclip } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import AlurPendaftaran from "./_sectionx/alur-pendaftaran";
+import HargaPaket from "./_sectionx/harga-paket";
 
 const HomepageLayout = () => {
   return (
@@ -31,15 +31,8 @@ const HomepageLayout = () => {
                 href="#program"
                 className={cn(buttonVariants({ variant: "default" }))}
               >
-                <Box className="mr-2 h-4 w-4" />
-                Program Kami
-              </Link>
-              <Link
-                href="#syarat"
-                className={cn(buttonVariants({ variant: "outline" }))}
-              >
-                <Paperclip className="mr-2 h-4 w-4" />
-                Persyaratan
+                Selengkapnya
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
           </div>
@@ -166,24 +159,28 @@ const HomepageLayout = () => {
         </div>
       </section>
 
-      {/* ALUR PENDIRIAN */}
-      <section id="program" className="px-4 py-20">
-        <div className="container flex flex-col items-center gap-8 text-center">
-          <h2 className="text-2xl font-bold md:text-4xl">Alur Pendaftaran</h2>
-        </div>
-      </section>
+      {/* ALUR PENDAFTARAN */}
+      <AlurPendaftaran />
 
       {/* PROGRAMS */}
-      <section id="program" className="bg-slate-50 px-4 py-20">
-        <div className="container flex flex-col items-center gap-8 text-center">
-          <h2 className="text-2xl font-bold md:text-4xl">Program Unggulan</h2>
-        </div>
-      </section>
+      <HargaPaket />
 
       {/* ROI */}
       <section id="program" className="px-4 py-20">
         <div className="container flex flex-col items-center gap-8 text-center">
-          <h2 className="text-2xl font-bold md:text-4xl">ROI</h2>
+          <h2 className="text-2xl font-bold md:text-4xl">
+            Return of Investment
+          </h2>
+
+          <div className="flex aspect-video items-center justify-center overflow-hidden rounded-md border">
+            <Image
+              src="/4x3.png"
+              alt="Programs"
+              width={800}
+              height={600}
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -197,7 +194,33 @@ const HomepageLayout = () => {
       {/* PERSYARATAN */}
       <section id="program" className="px-4 py-20">
         <div className="container flex flex-col items-center gap-8 text-center">
-          <h2 className="text-2xl font-bold md:text-4xl">Persyaratan</h2>
+          <h2 className="text-2xl font-bold md:text-4xl">Apakah Kamu</h2>
+
+          <ul className="grid gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8 md:gap-x-12">
+            <li className="flex flex-col items-center gap-4 rounded-md border bg-white p-4">
+              <Check className="h-6 w-6 shrink-0 text-destructive" />
+
+              <p>Memiliki rencana yang bagus tentang bisnis</p>
+            </li>
+            <li className="flex flex-col items-center gap-4 rounded-md border bg-white p-4">
+              <Check className="h-6 w-6 shrink-0 text-destructive" />
+
+              <p>Memiliki kemampuan atau pengetahuan tentang keuangan</p>
+            </li>
+            <li className="flex flex-col items-center gap-4 rounded-md border bg-white p-4">
+              <Check className="h-6 w-6 shrink-0 text-destructive" />
+
+              <p>memliki motivasi yang kuat</p>
+            </li>
+            <li className="flex flex-col items-center gap-4 rounded-md border bg-white p-4">
+              <Check className="h-6 w-6 shrink-0 text-destructive" />
+
+              <p>
+                {" "}
+                memiliki ketertarikan kuat dalam dunia bisnis, terutama FMCG
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </>
