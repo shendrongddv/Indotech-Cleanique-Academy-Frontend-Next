@@ -20,7 +20,7 @@ const Header = () => {
               Beranda
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/program"
               className={cn(buttonVariants({ variant: "ghost" }))}
@@ -28,7 +28,7 @@ const Header = () => {
               <Box className="mr-2 h-4 w-4" />
               Program
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="#" className={cn(buttonVariants({ variant: "ghost" }))}>
               <HelpCircle className="mr-2 h-4 w-4" />
