@@ -11,22 +11,13 @@ const ProgramCleaniqueAcademy = () => {
   return (
     <>
       {/* HERO */}
-      <section className="py-20 pt-36 px-4 bg-slate-100">
+
+      <section className="py-20 pt-36 px-4 gradient text-white">
         <div className="container">
           <div className="flex flex-col justify-start text-start gap-4 w-full md:w-1/2">
-            <h2 className="font-medium text-2xl md:text-4xl md:w-1/2 text-center">
-              #GROWYOURSELFWITHUS!
-            </h2>
-
-            <div className="grid gap-2 md:flex md:justify-start mt-4 md:items-center">
-              <Link
-                href="#"
-                className={cn(buttonVariants({ variant: "default" }))}
-              >
-                Telusuri Program
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
+            <h1 className="md:text-6xl font-medium text-balance text-2xl">
+              #GrowYourselfWithUs!
+            </h1>
           </div>
         </div>
       </section>
