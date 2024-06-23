@@ -71,8 +71,8 @@ export default function Homepage() {
             <div className="rounded-lg border bg-white p-4 md:p-6 flex flex-col gap-8 text-center justify-start">
               <figure className="h-16 w-auto flex justify-center items-center">
                 <Image
-                  src="/logo.png"
-                  alt="Cleanique Academy"
+                  src="/depo-cleanique.webp"
+                  alt="Depo Cleanique"
                   height={100}
                   width={100}
                   className="h-full w-auto"
@@ -84,7 +84,9 @@ export default function Homepage() {
               </p>
 
               <Link
-                href="#"
+                href="https://depocleanique.co.id/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
                   buttonVariants({ variant: "default" }),
                   "mt-auto"
