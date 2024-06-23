@@ -1,11 +1,11 @@
-import FooterFront from "./_components/header-footer/footer";
-import Header from "./_components/header-footer/header";
+import FooterFront from "@/components/header-footer/footer";
+import Header from "@/components/header-footer/header";
 
 export default function HomepageLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <>
       <Header />
