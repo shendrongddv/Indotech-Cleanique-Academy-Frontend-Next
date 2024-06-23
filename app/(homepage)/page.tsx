@@ -10,7 +10,7 @@ const HomepageLayout = () => {
   return (
     <>
       {/* HERO */}
-      <section className="px-4 py-40">
+      <section className="bg-[url('/bg-hero.webp')] bg-cover bg-no-repeat px-4 py-40">
         <div className="container">
           <div className="flex flex-col items-center justify-center gap-10 text-center">
             {/* ## */}
@@ -196,7 +196,7 @@ const HomepageLayout = () => {
         <div className="container flex flex-col items-center gap-8 text-center">
           <h2 className="text-2xl font-bold md:text-4xl">Apakah Kamu</h2>
 
-          <ul className="grid gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8 md:gap-x-12">
+          <ul className="grid w-full gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8 md:gap-x-12">
             <li className="flex flex-col items-center gap-4 rounded-md border bg-white p-4">
               <Check className="h-6 w-6 shrink-0 text-destructive" />
 
@@ -221,6 +221,32 @@ const HomepageLayout = () => {
               </p>
             </li>
           </ul>
+
+          <div className="mt-16 flex w-full flex-col items-center gap-10 rounded-md bg-primary p-6 py-16 text-center text-white md:p-16">
+            <h2 className="text-2xl font-bold md:text-4xl">
+              Punya kriteria diatas? Segera gabung dengan kami!
+            </h2>
+
+            <div className="grid w-full items-center justify-center gap-4 md:flex md:w-auto md:flex-row">
+              <Link
+                href="#"
+                className={cn(buttonVariants({ variant: "destructive" }))}
+              >
+                Daftar
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+              <Link
+                href="#"
+                className={cn(
+                  buttonVariants({ variant: "secondary" }),
+                  "text-black",
+                )}
+              >
+                Konsultasi
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>

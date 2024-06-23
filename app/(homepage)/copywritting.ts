@@ -1,3 +1,275 @@
+export const contentHargaPaket = [
+  {
+    id: "IDXXXX",
+    title: "Starter",
+    harga: 15,
+    features: [
+      {
+        id: "IDXXXX",
+        text: "Rak depot 6 kontainer",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Produk senilai 6.000.000",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "desain 3D interior",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Lisensi Depo Cleanique",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Peralatan produksi",
+        isInclude: true,
+      },
+
+      {
+        id: "IDXXXX",
+        text: "Include biaya kirim",
+        isInclude: true,
+      },
+
+      {
+        id: "IDXXXX",
+        text: "Peralatan packing",
+        isInclude: true,
+      },
+
+      {
+        id: "IDXXXX",
+        text: "Set-up Marketplace",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Media promo cetak",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Instalasi media promo cetak di lokasi",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Training chemical & bisnis",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Landing page SEO friendly",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Listing & optimasi Google Maps",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Set-up & optimasi sosmed",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Garansi usaha 1 tahun",
+        isInclude: false,
+      },
+
+      {
+        id: "IDXXXX",
+        text: "Filter UV",
+        isInclude: true,
+      },
+    ],
+  },
+  {
+    id: "IDXXXX",
+    title: "Premium",
+    harga: 17.9,
+    features: [
+      {
+        id: "IDXXXX",
+        text: "Rak depot 6 kontainer",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Produk senilai 7.000.000",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Desain 3D interior",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Lisensi Depo Cleanique",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Peralatan produksi",
+        isInclude: true,
+      },
+
+      {
+        id: "IDXXXX",
+        text: "Include biaya kirim",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Peralatan packing",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Set-up Marketplace",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Media promo cetak + Neon Box",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Instalasi media promo cetak di lokasi",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Training chemical & bisnis",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Landing page SEO friendly",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Listing & optimasi Google Maps",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Set-up & optimasi sosmed",
+        isInclude: false,
+      },
+      {
+        id: "IDXXXX",
+        text: "Garansi usaha 1 tahun",
+        isInclude: false,
+      },
+
+      {
+        id: "IDXXXX",
+        text: "Filter UV",
+        isInclude: true,
+      },
+    ],
+  },
+  {
+    id: "IDXXXX",
+    title: "King",
+    harga: 24.5,
+    features: [
+      {
+        id: "IDXXXX",
+        text: "Rak depot 6 kontainer",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Produk senilai 8.000.000",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Desain 3D interior",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Lisensi Depo Cleanique",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Peralatan produksi",
+        isInclude: true,
+      },
+
+      {
+        id: "IDXXXX",
+        text: "Include biaya kirim",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Peralatan packing",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Set-up Marketplace",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Media promo cetak + Neon Box",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Instalasi media promo cetak di lokasi",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Training chemical & bisnis",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Landing page SEO friendly",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Listing & optimasi Google Maps",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Set-up & optimasi sosmed",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Garansi usaha 1 tahun",
+        isInclude: true,
+      },
+
+      {
+        id: "IDXXXX",
+        text: "Filter UV",
+        isInclude: true,
+      },
+    ],
+  },
+];
+
 export const contentAlurPendaftaran = [
   {
     id: "dfdd640d-c2d8-5cec-bf56-5bba7600add4",
