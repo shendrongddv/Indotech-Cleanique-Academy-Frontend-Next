@@ -1,17 +1,19 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Andri Irawan a.k.a Shendrong",
-  description: "Andri Irawan a.k.a Shendrong - Frontend Web Developer",
+  name: "Cleanique Academy",
+  description:
+    "Program kemitraan intensif usaha Depo Cleanique™. Kami berikan dukungan penuh untuk kesuksesan usaha Anda",
   mainNav: [
     {
       title: "Home",
       href: "/",
     },
   ],
-  links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/ui",
-    docs: "https://ui.shadcn.com",
+  socialMedia: {
+    instagram: "https://www.instagram.com/cleaniqueacademy/",
+    facebook:
+      "https://web.facebook.com/people/Cleaniqueacademy/61560606725248/",
+    tiktok: "https://www.tiktok.com/@cleaniqueacademy",
   },
 };

@@ -1,4 +1,8 @@
 import { SiteLogoFooter } from "@/components/site-logo";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { buttonVariants } from "../ui/button";
+import { ChevronRight} from "lucide-react";
 
 const FooterFront = () => {
   return (
@@ -10,28 +14,87 @@ const FooterFront = () => {
           </div>
 
           <div className="flex flex-1 flex-col justify-start gap-4 text-start">
-            <h4 className="text-base font-medium">Keagenan</h4>
+            <h4 className="text-base font-medium">Program</h4>
 
             <ul>
-              <li>Paket Starter</li>
-              <li>Paket Premium</li>
-              <li>Paket King</li>
+              <li>
+                <Link
+                  href="/program-ca"
+                  className={cn(buttonVariants({ variant: "link" }), "p-0")}
+                >
+                  <ChevronRight className="mr-2 h-4 w-4" />
+                  Cleanique Academy™
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://depocleanique.co.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(buttonVariants({ variant: "link" }), "p-0")}
+                >
+                  <ChevronRight className="mr-2 h-4 w-4" />
+                  Depo Cleanique™
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div className="flex flex-1 flex-col justify-start gap-4 text-start">
-            <h4 className="text-base font-medium">Contact Us</h4>
+            <h4 className="text-base font-medium">Kontak</h4>
 
             <ul>
-              <li>+62857 1326 9167</li>
+              <li>
+                <Link
+                  href="https://api.whatsapp.com/send/?phone=6287872180088&text=Dengan%20CS%20Cleanique%20Academy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(buttonVariants({ variant: "link" }), "p-0")}
+                >
+                  <ChevronRight className="mr-2 h-4 w-4" />
+                  Customer Service
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div className="flex flex-1 flex-col justify-start gap-4 text-start">
-            <h4 className="text-base font-medium">Follow Us</h4>
+            <h4 className="text-base font-medium">Follow</h4>
 
             <ul>
-              <li>Instagram</li>
+              <li>
+                <Link
+                  href="https://www.tiktok.com/@cleaniqueacademy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(buttonVariants({ variant: "link" }), "p-0")}
+                >
+                  <ChevronRight className="mr-2 h-4 w-4" />
+                  TikTok
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.instagram.com/cleaniqueacademy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(buttonVariants({ variant: "link" }), "p-0")}
+                >
+                  <ChevronRight className="mr-2 h-4 w-4" />
+                  Instagram
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://web.facebook.com/people/Cleaniqueacademy/61560606725248/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(buttonVariants({ variant: "link" }), "p-0")}
+                >
+                  <ChevronRight className="mr-2 h-4 w-4" />
+                  Facebook
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

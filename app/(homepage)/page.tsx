@@ -20,16 +20,6 @@ export default function Homepage() {
               Kampus Merdeka adalah cara terbaik berkuliah. Dapatkan kemerdekaan
               untuk membentuk masa depan yang sesuai dengan aspirasi kariermu.
             </p>
-
-            <div className="grid gap-2 md:flex md:justify-start mt-4 md:items-center">
-              <Link
-                href="#"
-                className={cn(buttonVariants({ variant: "default" }))}
-              >
-                Telusuri Program
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -44,7 +34,7 @@ export default function Homepage() {
             <div className="rounded-lg bg-white p-4 md:p-6 flex flex-col gap-8 border text-center justify-start">
               <figure className="h-16 w-auto flex justify-center items-center">
                 <Image
-                  src="/logo.png"
+                  src="/cleanique-academy.png"
                   alt="Cleanique Academy"
                   height={100}
                   width={100}
@@ -52,8 +42,8 @@ export default function Homepage() {
                 />
               </figure>
               <p>
-                Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
-                Kampus Mengajar
+                Program kemitraan intensif usaha Depo Cleanique™. Kami berikan
+                dukungan penuh untuk kesuksesan usaha Anda.
               </p>
 
               <Link
@@ -79,8 +69,8 @@ export default function Homepage() {
                 />
               </figure>
               <p>
-                Bantu tingkatkan kualitas pengajaran pendidikan dasar melalui
-                Kampus Mengajar
+                Paket usaha depot isi ulang berbagai macam sabun, parfum &
+                cairan pembersih untuk kebutuhan rumah tangga & laundry.
               </p>
 
               <Link

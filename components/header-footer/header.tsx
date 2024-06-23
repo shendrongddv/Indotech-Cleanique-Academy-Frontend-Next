@@ -30,7 +30,12 @@ const Header = () => {
             </Link>
           </li> */}
           <li>
-            <Link href="#" className={cn(buttonVariants({ variant: "ghost" }))}>
+            <Link
+              href="https://api.whatsapp.com/send/?phone=6287872180088&text=Dengan%20CS%20Cleanique%20Academy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(buttonVariants({ variant: "ghost" }))}
+            >
               <HelpCircle className="mr-2 h-4 w-4" />
               Bantuan
             </Link>
@@ -40,11 +45,10 @@ const Header = () => {
         {/* Groups */}
         <div className="flex items-center justify-center gap-2">
           <Link
-            href="/account"
-            className={cn(
-              buttonVariants({ variant: "default" }),
-              "hidden md:flex"
-            )}
+            href="https://app.cleaniqueacademy.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(buttonVariants({ variant: "default" }))}
           >
             <LogInIcon className="mr-2 h-4 w-4" />
             Daftar
