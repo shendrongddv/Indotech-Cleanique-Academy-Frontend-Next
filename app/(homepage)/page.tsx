@@ -4,22 +4,38 @@ import { ArrowRight, ArrowUpRightFromSquareIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FAQ } from "./sections/faq";
+import TestimoniMitra from "./program-ca/_sections/testimoni-mitra";
 
 export default function Homepage() {
   return (
     <>
       {/* HERO */}
-      <section className="py-20 pt-36 px-4">
-        <div className="container">
-          <div className="flex flex-col justify-start text-start gap-4 w-full md:w-1/2">
-            <h1 className="md:text-6xl font-medium text-balance text-4xl">
-              Ambil Kendali Masa Depanmu
+      <section className="py-20 px-4">
+        <div className="container flex flex-col-reverse md:flex-row items-center justify-between">
+          <div className="w-full md:w-6/12 flex flex-col gap-6 items-start">
+            <h1 className="md:text-4xl font-black text-balance text-2xl">
+              #GROWYOURSELFWITHUS!
             </h1>
 
             <p className="md:text-lg">
-              Kampus Merdeka adalah cara terbaik berkuliah. Dapatkan kemerdekaan
-              untuk membentuk masa depan yang sesuai dengan aspirasi kariermu.
+              Cleanique Academy merupakan program unggulan dari PT Indotech
+              Berkah Abadi, salah satu perusahaan lokal dari Yogyakarta, melalui
+              brand nya Orchidcare memberikan pelatihan, pembinaan, serta
+              permodalan usaha bagi calon mitra Cleanique Academy yang nantinya
+              akan dibimbing oleh mentor dengan status kemitraan seumur hidup.
             </p>
+          </div>
+
+          <div className="w-full md:w-5/12">
+            <figure className="flex justify-center items-center aspect-square">
+              <Image
+                src="/01J141J72D567BMPF7QT5EJVQK.png"
+                alt="Image"
+                width={1024}
+                height={582}
+                className="w-full h-auto"
+              />
+            </figure>
           </div>
         </div>
       </section>
@@ -95,7 +111,7 @@ export default function Homepage() {
       <section className="py-20 px-4 bg-foreground text-white">
         <div className="container flex flex-col justify-center items-center gap-16">
           <h2 className="font-medium text-2xl md:text-4xl md:w-1/2 text-center">
-            Apa saja manfaat program Kampus Merdeka?
+            Banyak Manfaatnya
           </h2>
 
           <div className="w-full grid gap-12 sm:grid-cols-2 md:grid-cols-4">
@@ -109,7 +125,7 @@ export default function Homepage() {
               />
 
               <p className="text-balance md:w-4/5">
-                Kegiatan dapat dikonversi menjadi SKS.
+                Pelatihan pembuatan chemical solution
               </p>
             </div>
             <div className="flex flex-col gap-4 justify-start items-center text-center">
@@ -122,7 +138,7 @@ export default function Homepage() {
               />
 
               <p className="text-balance md:w-4/5">
-                Perluas jaringan hingga ke luar program studi dan universitas.
+                Pembinaan agar usaha dapat berjalan lancar
               </p>
             </div>
             <div className="flex flex-col gap-4 justify-start items-center text-center">
@@ -135,8 +151,7 @@ export default function Homepage() {
               />
 
               <p className="text-balance md:w-4/5">
-                Eksplorasi pengetahuan dan kemampuan di lapangan selama lebih
-                dari satu semester.
+                Dibantu untuk solusi permodalah
               </p>
             </div>
             <div className="flex flex-col gap-4 justify-start items-center text-center">
@@ -149,8 +164,7 @@ export default function Homepage() {
               />
 
               <p className="text-balance md:w-4/5">
-                Menimba ilmu secara langsung dari mitra berkualitas dan
-                terkemuka.
+                Mentoring dengan pakar berpengalaman
               </p>
             </div>
           </div>
@@ -167,6 +181,14 @@ export default function Homepage() {
         </div>
       </section>
       {/* ./ SYARAT */}
+
+      {/* Testimoni Mitra */}
+      <section className="py-20 px-4">
+        <div className="container space-y-10">
+          <TestimoniMitra />
+        </div>
+      </section>
+      {/* ./ Testimoni Mitra */}
 
       {/* FAQ */}
       <section className="py-20 px-4">

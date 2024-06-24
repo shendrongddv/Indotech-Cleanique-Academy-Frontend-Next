@@ -1,17 +1,17 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, ChevronRight, LogInIcon } from "lucide-react";
 import Link from "next/link";
 import AlurPendaftaran from "./_sections/alur-pendaftaran";
 import Image from "next/image";
 import KelebihanProgram from "./_sections/kelebihan-program";
 import HargaPaket from "./_sections/harga-paket";
+import TestimoniMitra from "./_sections/testimoni-mitra";
 
 const ProgramCleaniqueAcademy = () => {
   return (
     <>
       {/* HERO */}
-
       <section className="py-20 pt-36 px-4 gradient text-white">
         <div className="container">
           <div className="flex flex-col justify-start text-start gap-4 w-full md:w-1/2">
@@ -156,9 +156,7 @@ const ProgramCleaniqueAcademy = () => {
       {/* Testimoni Mitra */}
       <section className="py-20 px-4">
         <div className="container space-y-10">
-          <h2 className="font-medium text-2xl md:text-4xl md:w-1/2">
-            Testimoni Mitra
-          </h2>
+          <TestimoniMitra />
         </div>
       </section>
       {/* ./ Testimoni Mitra */}
@@ -201,21 +199,28 @@ const ProgramCleaniqueAcademy = () => {
 
             <div className="grid w-full items-center justify-center gap-4 md:flex md:w-auto md:flex-row">
               <Link
-                href="#"
-                className={cn(buttonVariants({ variant: "destructive" }))}
-              >
-                Daftar
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-              <Link
-                href="#"
+                href="https://app.cleaniqueacademy.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
-                  buttonVariants({ variant: "secondary" }),
-                  "text-black"
+                  buttonVariants({ variant: "outline" }),
+                  "bg-transparent text-white"
                 )}
               >
-                Konsultasi
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <LogInIcon className="mr-2 h-4 w-4" />
+                Daftar
+              </Link>
+              <Link
+                href="https://api.whatsapp.com/send/?phone=6287872180088&text=Dengan%20CS%20Cleanique%20Academy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  buttonVariants({ variant: "outline" }),
+                  "bg-transparent text-white"
+                )}
+              >
+                <ChevronRight className="mr-2 h-4 w-4" />
+                Customer Service
               </Link>
             </div>
           </div>
