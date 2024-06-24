@@ -132,7 +132,7 @@ const ProgramCleaniqueAcademy = () => {
             Harga & ROI
           </h2> */}
 
-          <div className="flex justify-between items-start gap-10">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-10">
             <div className="w-full md:w-1/3">
               <HargaPaket />
             </div>

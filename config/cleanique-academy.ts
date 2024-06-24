@@ -181,7 +181,7 @@ export const contentHargaPaket = [
   // },
   {
     id: "IDXXXX",
-    title: "Harga",
+    title: "Investasi",
     harga: 27.5,
     features: [
       {

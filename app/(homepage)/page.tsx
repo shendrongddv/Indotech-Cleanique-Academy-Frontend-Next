@@ -173,13 +173,13 @@ export default function Homepage() {
       {/* ./ BENEFITS */}
 
       {/* SYARAT */}
-      <section className="py-20 px-4 bg-slate-100">
+      {/* <section className="py-20 px-4 bg-slate-100">
         <div className="container flex flex-col justify-center items-center gap-16">
           <h2 className="font-medium text-2xl md:text-4xl md:w-1/2 text-center">
             Apa saja syarat keikutsertaan mahasiswa?
           </h2>
         </div>
-      </section>
+      </section> */}
       {/* ./ SYARAT */}
 
       {/* Testimoni Mitra */}
