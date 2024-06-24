@@ -184,6 +184,7 @@ export const contentHargaPaket = [
     title: "Investasi",
     harga: 27.5,
     features: [
+      // FISIK
       {
         id: "IDXXXX",
         text: "Rak depot 6 kontainer",
@@ -196,23 +197,12 @@ export const contentHargaPaket = [
       },
       {
         id: "IDXXXX",
-        text: "Desain 3D interior",
-        isInclude: true,
-      },
-      {
-        id: "IDXXXX",
-        text: "Lisensi Depo Cleanique",
+        text: "Filter UV",
         isInclude: true,
       },
       {
         id: "IDXXXX",
         text: "Peralatan produksi",
-        isInclude: true,
-      },
-
-      {
-        id: "IDXXXX",
-        text: "Include biaya kirim",
         isInclude: true,
       },
       {
@@ -222,22 +212,18 @@ export const contentHargaPaket = [
       },
       {
         id: "IDXXXX",
+        text: "Media promo cetak + Neon Box",
+        isInclude: true,
+      },
+      // NON FISIK
+      {
+        id: "IDXXXX",
         text: "Set-up Marketplace",
         isInclude: true,
       },
       {
         id: "IDXXXX",
-        text: "Media promo cetak + Neon Box",
-        isInclude: true,
-      },
-      {
-        id: "IDXXXX",
-        text: "Instalasi media promo cetak di lokasi",
-        isInclude: true,
-      },
-      {
-        id: "IDXXXX",
-        text: "Training chemical & bisnis",
+        text: "Set-up & optimasi sosmed",
         isInclude: true,
       },
       {
@@ -250,20 +236,36 @@ export const contentHargaPaket = [
         text: "Listing & optimasi Google Maps",
         isInclude: true,
       },
+      // JASA
       {
         id: "IDXXXX",
-        text: "Set-up & optimasi sosmed",
+        text: "Include biaya kirim",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Instalasi media promo cetak di lokasi",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Training chemical & bisnis",
+        isInclude: true,
+      },
+      // VALUE
+      {
+        id: "IDXXXX",
+        text: "Desain 3D interior",
+        isInclude: true,
+      },
+      {
+        id: "IDXXXX",
+        text: "Lisensi Depo Cleanique",
         isInclude: true,
       },
       {
         id: "IDXXXX",
         text: "Garansi usaha 1 tahun",
-        isInclude: true,
-      },
-
-      {
-        id: "IDXXXX",
-        text: "Filter UV",
         isInclude: true,
       },
     ],
@@ -322,44 +324,34 @@ export const contentAlurPendaftaran = [
 export const contentTestimoniMitra = [
   {
     id: "5579a282-5747-5ab4-956a-b3071f08ba8b",
-    name: "Budi Rahardjo",
-    address: "Sleman, Yogyakarta",
+    name: "Windu",
+    isMale: true,
+    address: "",
     review:
-      "Pelatihan ini sangat bermanfaat dan membuka wawasan baru bagi saya. Materinya disampaikan dengan jelas dan mudah dipahami oleh instruktur yang berpengalaman. Saya juga senang dengan metode pelatihan yang interaktif dan partisipatif, sehingga saya dapat langsung mempraktikkan apa yang telah saya pelajari. Secara keseluruhan, saya sangat puas dengan pelatihan ini dan saya merekomendasikannya kepada siapa pun yang ingin mempelajari [topik pelatihan].",
+      "Modal terbatas, tapi semangat tinggi! Cleanique bantu modal dan bimbingan, usaha isi ulang sabun saya sukses!",
   },
   {
     id: "9aee0bb7-50fd-512f-9160-7f42977d2a30",
-    name: "Ani Lestari",
-    address: "Depok, Jawa Barat",
+    name: "Kevin",
+    isMale: true,
+    address: "",
     review:
-      "Pelatihan ini sangat membantu saya untuk meningkatkan keterampilan [keterampilan yang dipelajari] saya. Saya belajar banyak teknik dan strategi baru yang dapat saya terapkan dalam pekerjaan saya. Para instruktur sangat ramah dan suportif, dan mereka selalu siap membantu saya jika saya mengalami kesulitan. Saya sangat senang dengan pengalaman saya di pelatihan ini dan saya yakin bahwa ini akan membantu saya untuk mencapai kesuksesan di masa depan.",
+      "Dulu hanya karyawan biasa, sekarang jadi pengusaha isi ulang sabun yang mandiri. Berkat Cleanique, mimpi saya terwujud!",
   },
   {
     id: "4d2c2371-dc21-5345-bdb7-1ea36578576a",
-    name: "Cahyo Wibowo",
-    address: "Surabaya, Jawa Timur",
+    name: "Idha",
+    isMale: false,
+    address: "",
     review:
-      "Pelatihan ini memberikan saya pengetahuan dan pemahaman yang mendalam tentang [topik pelatihan]. Materinya disampaikan dengan cara yang menarik dan mudah dipahami, dan saya dapat langsung menerapkan apa yang telah saya pelajari dalam kehidupan sehari-hari. Saya juga senang dengan fasilitas pelatihan yang lengkap dan nyaman. Secara keseluruhan, saya sangat puas dengan pelatihan ini dan saya merekomendasikannya kepada siapa pun yang ingin mempelajari [topik pelatihan].",
+      "Bimbingan Cleanique sangat membantu saya dalam mengembangkan usaha isi ulang sabun. Omzet naik drastis, untung berlimpah!",
   },
   {
     id: "da0fef88-a4f6-5f9a-95ba-4d4b765908f8",
-    name: "Dini Putri",
-    address: "Bandung, Jawa Barat",
+    name: "Daniel",
+    isMale: true,
+    address: "",
     review:
-      "Pelatihan ini sangat memotivasi saya untuk terus belajar dan berkembang. Para instruktur sangat inspiratif dan mereka memberikan banyak contoh nyata yang dapat saya terapkan dalam kehidupan saya. Saya juga senang dengan komunitas yang terbentuk di pelatihan ini, di mana saya dapat bertukar pikiran dan belajar dari peserta lain. Saya sangat bersyukur atas kesempatan untuk mengikuti pelatihan ini dan saya yakin bahwa ini akan memberikan dampak positif bagi kehidupan saya.",
-  },
-  {
-    id: "8f011e0e-f8dd-5987-90cf-0af14c550d60",
-    name: "Eko Susanto",
-    address: "Semarang, Jawa Tengah",
-    review:
-      "Pelatihan ini sangat bermanfaat bagi saya untuk meningkatkan kemampuan [keterampilan yang dipelajari] saya. Saya belajar banyak teknik dan strategi baru yang dapat saya terapkan dalam pekerjaan saya. Para instruktur sangat profesional dan mereka memberikan banyak tips dan trik yang bermanfaat. Saya juga senang dengan materi pelatihan yang up-to-date dan relevan dengan kebutuhan industri saat ini. Secara keseluruhan, saya sangat puas dengan pelatihan ini dan saya merekomendasikannya kepada siapa pun yang ingin meningkatkan kemampuan [keterampilan yang dipelajari] mereka.",
-  },
-  {
-    id: "620e086a-22aa-5452-a334-a82432eb0475",
-    name: "Fitriani",
-    address: "Medan, Sumatera Utara",
-    review:
-      "Pelatihan ini sangat membantu saya untuk meningkatkan kepercayaan diri dan kemampuan saya dalam berkomunikasi. Saya belajar banyak teknik dan strategi baru yang dapat saya gunakan untuk presentasi, negosiasi, dan membangun hubungan dengan orang lain. Para instruktur sangat sabar dan mereka selalu memberikan feedback yang membangun. Saya juga senang dengan suasana pelatihan yang positif dan menyenangkan. Secara keseluruhan, saya sangat puas dengan pelatihan ini dan saya merekomendasikannya kepada siapa pun yang ingin meningkatkan kemampuan komunikasi mereka.",
+      "Modal kecil, peluang besar! Gabung Cleanique, usaha isi ulang sabun saya cuan! Bebas dari jeratan finansial, hidup lebih tenang.",
   },
 ];
