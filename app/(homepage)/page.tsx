@@ -4,7 +4,7 @@ import { ArrowRight, ArrowUpRightFromSquareIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FAQ } from "./sections/faq";
-import TestimoniMitra from "./program-ca/_sections/testimoni-mitra";
+import TestimoniMitra from "./program-ca-old/_sections/testimoni-mitra";
 
 export default function Homepage() {
   return (
