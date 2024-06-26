@@ -117,7 +117,7 @@ const ProgramCleaniqueAcademy = () => {
                   />
                 </figure>
 
-                <div className="p-4 flex flex-col gap-4 mt-4">
+                <div className="p-4 flex flex-col justify-start items-center text-center gap-4 mt-4">
                   <h3 className="text-lg font-bold">{item.title}</h3>
                   <p>{item.body}</p>
                 </div>
