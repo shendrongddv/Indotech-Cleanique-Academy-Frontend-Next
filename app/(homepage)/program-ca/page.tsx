@@ -1,11 +1,16 @@
 import Image from "next/image";
-import { copyAlpha, copyJaminanPerlindunganUsaha } from "./copywritting";
+import {
+  copyAlpha,
+  copyAlurPendaftaran,
+  copyJaminanPerlindunganUsaha,
+} from "./copywritting";
 import { SiteLogoFooter } from "@/components/site-logo";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { LogIn, Phone } from "lucide-react";
 import TestimoniMitra from "../program-ca-old/_sections/testimoni-mitra";
+import { HargaPaketBeta } from "../program-ca-old/_sections/harga-paket";
 
 const ProgramCleaniqueAcademy = () => {
   return (
@@ -127,26 +132,17 @@ const ProgramCleaniqueAcademy = () => {
       <section className="px-4 py-20">
         <div className="container flex flex-col items-center gap-10">
           {/* ROW */}
-          <div className="grid w-full md:w-1/2 md:grid-cols-2 aspect-square">
+          <div className="grid aspect-square md:grid-cols-2 w-full md:w-7/12 gap-4 md:gap-0">
             {/* COL */}
-            <div className="aspect-square flex justify-center items-center text-center gap-4">
-              <h2 className="text-2xl text-[#1a643f] md:text-3xl font-black">
+            <div className=" md:p-4 flex justify-center items-center md:aspect-square p-4">
+              <h2 className="text-xl md:text-2xl font-bold md:w-1/2 text-center">
                 Fasilitas Mitra
               </h2>
             </div>
+
             {/* COL */}
-            <div className="aspect-square flex text-white bg-[#1a643f] flex-col p-4 items-start justify-center gap-4">
+            <div className="p-4 py-6 md:p-6 bg-[#1C643F] text-white flex flex-col justify-center items-start gap-2 rounded-tl-3xl rounded-br-3xl md:aspect-square">
               <h3 className="text-lg font-bold">Proteksi Perang Harga</h3>
-              <p>
-                Ketika Mitra bergabung dengan Cleanique Academy, Mitra memiliki
-                hak untuk menggunakan merek tersebut dan dilindungi oleh
-                undang-undang untuk menghindari kemungkinan gugatan merek yang
-                dapat mengganggu bisnis mitra.
-              </p>
-            </div>
-            {/* COL */}
-            <div className="aspect-square flex text-white bg-[#1a643f] flex-col p-4 items-start justify-center gap-4">
-              <h3 className="text-lg font-bold">Garansi Usaha & Produk</h3>
               <p>
                 Ketika Mitra bergabung dengan Cleanique Academy, Mitra memiliki
                 hak untuk menggunakan merek tersebut dan dilindungi oleh
@@ -156,10 +152,21 @@ const ProgramCleaniqueAcademy = () => {
             </div>
 
             {/* COL */}
-            <div className="aspect-square flex justify-center items-center text-center gap-4">
-              <h2 className="text-xl text-[#1a643f] md:text-3xl font-black">
+            <div className="p-4 py-6 md:p-6 flex flex-col justify-center items-end gap-2 text-end bg-[#1C643F] text-white rounded-br-3xl rounded-tl-3xl md:aspect-square">
+              <h3 className="text-lg font-bold">Garansi Usaha & Produk</h3>
+              <p>
+                Ketika Mitra bergabung dengan Cleanique Academy, Mitra memiliki
+                hak untuk menggunakan merek tersebut dan dilindungi oleh
+                undang-undang untuk menghindari kemungkinan ugatan merek yang
+                dapat mengganggu bisnis mitra.
+              </p>
+            </div>
+
+            {/* COL */}
+            <div className=" md:p-4 flex justify-center items-center md:aspect-square p-4">
+              <span className="text-xl md:text-2xl font-bold md:w-1/2 text-center">
                 Cleanique Academy
-              </h2>
+              </span>
             </div>
           </div>
         </div>
@@ -175,25 +182,25 @@ const ProgramCleaniqueAcademy = () => {
           </h2>
 
           {/* ROW */}
-          <ul className="w-full grid md:grid-cols-3 gap-10">
-            {copyJaminanPerlindunganUsaha?.map((item) => (
+          <ul className="grid w-full md:w-2/3 gap-6 md:grid-cols-2 md:gap-x-16">
+            {copyAlurPendaftaran?.map((item) => (
               <li
                 key={item.id}
-                className="bg-white p-4 border h-full flex flex-col justify-start"
+                className="flex justify-start items-start gap-4 md:even:flex-row-reverse"
               >
-                <figure className=" flex justify-center items-center h-auto w-full border">
+                <figure className="flex justify-center items-center aspect-square h-10 md:h-16 rounded-full border shrink-0">
                   <Image
                     src={`/v2/${item.media}`}
-                    alt={item.title}
-                    width={400}
-                    height={400}
-                    className="w-full h-auto"
+                    alt={item.mark}
+                    width={80}
+                    height={80}
+                    className="md:h-7 h-4 w-auto"
                   />
                 </figure>
 
-                <div className="p-4 flex flex-col gap-4 mt-4">
-                  <h3 className="text-lg font-bold">{item.title}</h3>
-                  <p>{item.body}</p>
+                <div className="bg-white flex-1 flex flex-col p-4 text-start h-full rounded-tl-3xl rounded-br-3xl">
+                  <h3 className="font-bold text-sm text-muted-foreground">{`#${item.mark}`}</h3>
+                  <p>{item.desc}</p>
                 </div>
               </li>
             ))}
@@ -203,17 +210,23 @@ const ProgramCleaniqueAcademy = () => {
       {/* ./ ALUR PENDAFTARAN */}
 
       {/* ROI */}
-      <section className="py-20">
-        <div className="container flex justify-center">
-          <figure className="flex justify-center items-center w-full md:w-4/5">
-            <Image
-              src="/v2/ROI.png"
-              alt="ROI"
-              width={1476}
-              height={935}
-              className="w-full h-auto"
-            />
-          </figure>
+      <section className="py-20 px-4">
+        <div className="container flex flex-col md:flex-row md:justify-between md:items-start gap-10">
+          <div className="w-full md:w-1/3">
+            <HargaPaketBeta />
+          </div>
+
+          <div className="flex-1">
+            <figure className="flex justify-center items-center w-full">
+              <Image
+                src="/v2/ROI.png"
+                alt="ROI"
+                width={1476}
+                height={935}
+                className="w-full h-auto"
+              />
+            </figure>
+          </div>
         </div>
       </section>
       {/* ./ ROI */}
@@ -241,7 +254,15 @@ const ProgramCleaniqueAcademy = () => {
           <div className="w-full -mt-10 grid md:grid-cols-2 gap-10">
             {/* COL */}
             <div>
-              <figure className="overflow-hidden flex justify-center items-center bg-white aspect-square"></figure>
+              <figure className="overflow-hidden flex justify-center rounded-xl border-white border-4 shadow-xl items-center bg-white aspect-square">
+                <Image
+                  src="/v2/collage.png"
+                  alt="CTA"
+                  width={400}
+                  height={100}
+                  className="w-full h-auto object-cover"
+                />
+              </figure>
             </div>
 
             {/* COL */}
