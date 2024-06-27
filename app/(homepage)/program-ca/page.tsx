@@ -155,16 +155,16 @@ const ProgramCleaniqueAcademy = () => {
 
             {/* COL */}
             <div className="p-4 py-6 md:p-6 flex flex-col justify-center items-center md:items-end gap-2 md:text-end bg-[#1C643F] text-white rounded-br-3xl rounded-tl-3xl md:aspect-square text-center">
-              <h3 className="text-lg font-bold">Garansi Usaha & Produk</h3>
-              <p>
-                <b>Usaha :</b> garansi penggantian produk apabila terjadi
-                kegagalan dalam pengolahan produk setelah mengikuti panduan
-                pengolahan disertai bukti video pembuatan.
-              </p>
+              <h3 className="text-lg font-bold">Garansi Produk & Usaha</h3>
               <p>
                 <b>Produk :</b> garansi uang kembali apabila tidak balik modal
                 dalam jangka waktu yang telah ditentukan sesuai dengan
                 kesepakatan Bersama (MoU)
+              </p>
+              <p>
+                <b>Usaha :</b> garansi penggantian produk apabila terjadi
+                kegagalan dalam pengolahan produk setelah mengikuti panduan
+                pengolahan disertai bukti video pembuatan.
               </p>
             </div>
 
