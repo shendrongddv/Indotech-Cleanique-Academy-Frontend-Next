@@ -143,7 +143,7 @@ const ProgramCleaniqueAcademy = () => {
             </div>
 
             {/* COL */}
-            <div className="p-4 py-6 md:p-6 bg-[#1C643F] text-white flex flex-col justify-center items-start gap-2 rounded-tl-3xl rounded-br-3xl md:aspect-square">
+            <div className="p-4 py-6 md:p-6 bg-[#1C643F] text-white flex flex-col justify-center items-center md:items-start gap-2 rounded-tl-3xl rounded-br-3xl md:aspect-square text-center md:text-start">
               <h3 className="text-lg font-bold">Proteksi Perang Harga</h3>
               <p>
                 Ketika Mitra bergabung dengan Cleanique Academy, Mitra memiliki
@@ -154,13 +154,17 @@ const ProgramCleaniqueAcademy = () => {
             </div>
 
             {/* COL */}
-            <div className="p-4 py-6 md:p-6 flex flex-col justify-center items-end gap-2 text-end bg-[#1C643F] text-white rounded-br-3xl rounded-tl-3xl md:aspect-square">
+            <div className="p-4 py-6 md:p-6 flex flex-col justify-center items-center md:items-end gap-2 md:text-end bg-[#1C643F] text-white rounded-br-3xl rounded-tl-3xl md:aspect-square text-center">
               <h3 className="text-lg font-bold">Garansi Usaha & Produk</h3>
               <p>
-                Ketika Mitra bergabung dengan Cleanique Academy, Mitra memiliki
-                hak untuk menggunakan merek tersebut dan dilindungi oleh
-                undang-undang untuk menghindari kemungkinan ugatan merek yang
-                dapat mengganggu bisnis mitra.
+                <b>Usaha :</b> garansi penggantian produk apabila terjadi
+                kegagalan dalam pengolahan produk setelah mengikuti panduan
+                pengolahan disertai bukti video pembuatan.
+              </p>
+              <p>
+                <b>Produk :</b> garansi uang kembali apabila tidak balik modal
+                dalam jangka waktu yang telah ditentukan sesuai dengan
+                kesepakatan Bersama (MoU)
               </p>
             </div>
 
