@@ -56,6 +56,18 @@ export const copyJaminanPerlindunganUsaha = [
     media: "MUI.png",
     body: "Produk PT Indotech Berkah Abadi telah bersertifikat HALAL MUI, sehingga aman untuk digunakan, karena tidak mengandung bahan najis yang akan merusak kemurnian/nilai ibadah konsumun, terutama bagi konsumen yang muslim.",
   },
+  {
+    id: "ac04e6c7-1c6a-571d-8c86-ad032cbd4212",
+    title: "Garansi Produk",
+    media: null,
+    body: "Garansi penggantian produk apabila terjadi kegagalan dalam pengolahan produk setelah mengikuti panduan pengolahan disertai bukti video pembuatan. ",
+  },
+  {
+    id: "e6185297-f52f-5c63-8692-4dcb67bde150",
+    title: "Garansi Usaha",
+    media: null,
+    body: "Garansi uang kembali apabila tidak balik modal dalam jangka waktu yang telah ditentukan sesuai dengan kesepakatan Bersama (MoU)",
+  },
 ];
 
 // Alur Pendaftaran

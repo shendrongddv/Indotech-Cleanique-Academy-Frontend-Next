@@ -107,15 +107,17 @@ const ProgramCleaniqueAcademy = () => {
                 key={item.id}
                 className="bg-white p-4 border h-full flex flex-col justify-start"
               >
-                <figure className=" flex justify-center items-center h-auto w-full border">
-                  <Image
-                    src={`/v2/${item.media}`}
-                    alt={item.title}
-                    width={400}
-                    height={400}
-                    className="w-full h-auto"
-                  />
-                </figure>
+                {item.media !== null ? (
+                  <figure className=" flex justify-center items-center h-auto w-full border">
+                    <Image
+                      src={`/v2/${item.media}`}
+                      alt={item.title}
+                      width={400}
+                      height={400}
+                      className="w-full h-auto"
+                    />
+                  </figure>
+                ) : null}
 
                 <div className="p-4 flex flex-col justify-start items-center text-center gap-4 mt-4">
                   <h3 className="text-lg font-bold">{item.title}</h3>
