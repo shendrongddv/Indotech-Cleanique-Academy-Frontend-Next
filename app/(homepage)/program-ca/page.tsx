@@ -38,7 +38,7 @@ const ProgramCleaniqueAcademy = () => {
               rel="noopener noreferrer"
               className={cn(
                 buttonVariants({ variant: "default" }),
-                "w-full md:w-auto my-btn rounded-full mt-4 border-b-2 border-white shadow-lg"
+                "my-btn rounded-full mt-4 border-b-2 border-white shadow-lg"
               )}
             >
               <span className="drop-shadow-lg text-white font-bold">

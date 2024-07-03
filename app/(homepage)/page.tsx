@@ -13,9 +13,9 @@ export default function Homepage() {
     <>
       {/* HERO */}
       <section className="py-20 pt-36 px-4">
-        <div className="container flex flex-col-reverse md:flex-row items-center justify-between">
+        <div className="container flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           {/* COL */}
-          <div className="w-full md:w-5/12 flex flex-col gap-6 items-start">
+          <div className="w-full md:w-5/12 flex flex-col gap-6 items-center md:items-start text-center md:text-start">
             <h1 className="md:text-4xl font-black text-balance text-2xl">
               #GROWYOURSELFWITHUS!
             </h1>
@@ -34,7 +34,7 @@ export default function Homepage() {
               rel="noopener noreferrer"
               className={cn(
                 buttonVariants({ variant: "default" }),
-                "w-full md:w-auto my-btn rounded-full mt-4 border-b-2 border-white shadow-lg"
+                "my-btn rounded-full mt-4 border-b-2 border-white shadow-lg"
               )}
             >
               <span className="drop-shadow-lg text-white font-bold">
