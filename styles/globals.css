@@ -77,3 +77,26 @@ body,
     #8e2de2
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.my-btn {
+  background: rgb(41, 83, 138);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(41, 83, 138, 1) 4%,
+    rgba(129, 177, 201, 1) 41%,
+    rgba(75, 78, 154, 1) 87%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(41, 83, 138, 1) 4%,
+    rgba(129, 177, 201, 1) 41%,
+    rgba(75, 78, 154, 1) 87%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(41, 83, 138, 1) 4%,
+    rgba(129, 177, 201, 1) 41%,
+    rgba(75, 78, 154, 1) 87%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#29538a",endColorstr="#4b4e9a",GradientType=1);
+}

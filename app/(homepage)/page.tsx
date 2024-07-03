@@ -12,7 +12,7 @@ export default function Homepage() {
   return (
     <>
       {/* HERO */}
-      <section className="py-20 px-4">
+      <section className="py-20 pt-36 px-4">
         <div className="container flex flex-col-reverse md:flex-row items-center justify-between">
           {/* COL */}
           <div className="w-full md:w-5/12 flex flex-col gap-6 items-start">
@@ -34,10 +34,12 @@ export default function Homepage() {
               rel="noopener noreferrer"
               className={cn(
                 buttonVariants({ variant: "default" }),
-                "w-full md:w-auto bg-[#1E4291] border-b-2 border-white shadow-lg"
+                "w-full md:w-auto my-btn rounded-full mt-4 border-b-2 border-white shadow-lg"
               )}
             >
-              Daftar Sekarang
+              <span className="drop-shadow-lg text-white font-bold">
+                Daftar Sekarang
+              </span>
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>

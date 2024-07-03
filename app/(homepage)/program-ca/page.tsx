@@ -16,7 +16,7 @@ const ProgramCleaniqueAcademy = () => {
   return (
     <>
       {/* HERO */}
-      <section className="px-4 py-20 pt-36">
+      <section className="px-4 py-20 pt-36 bg-[url('/v2/Bakground-1-Photoroom.png')] bg-cover bg-center bg-no-repeat">
         <div className="container flex md:flex-row flex-col md:justify-between md:items-center gap-16">
           {/* COL */}
           <div className="w-full md:w-6/12 flex flex-col gap-6 items-center md:items-start text-center md:text-start">
@@ -38,10 +38,12 @@ const ProgramCleaniqueAcademy = () => {
               rel="noopener noreferrer"
               className={cn(
                 buttonVariants({ variant: "default" }),
-                "w-full md:w-auto bg-[#1E4291] mt-4 border-b-2 border-white shadow-lg"
+                "w-full md:w-auto my-btn rounded-full mt-4 border-b-2 border-white shadow-lg"
               )}
             >
-              Daftar Sekarang
+              <span className="drop-shadow-lg text-white font-bold">
+                Daftar Sekarang
+              </span>
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
@@ -63,7 +65,7 @@ const ProgramCleaniqueAcademy = () => {
       {/* ./ HERO */}
 
       {/* SECTIONXXX */}
-      <section className="px-4 py-20">
+      <section className="px-4 py-20 bg-[url('/v2/Bakground-3-Photoroom.png')] bg-cover bg-center bg-no-repeat">
         <div className="container flex flex-col items-center  gap-20">
           {/* ROW */}
           <div className="w-full md:w-4/5 flex flex-col text-center justify-center gap-2">
@@ -144,7 +146,7 @@ const ProgramCleaniqueAcademy = () => {
       {/* ./ JAMINAN PERLINDUNGAN USAHA */}
 
       {/* FASILITAS MITRA */}
-      <section className="px-4 py-20">
+      <section className="px-4 py-20 bg-[url('/v2/Bakground-3-Photoroom.png')] bg-cover bg-center bg-no-repeat">
         <div className="container flex flex-col items-center gap-10">
           {/* ROW */}
           <div className="grid aspect-square md:grid-cols-2 w-full md:w-7/12 gap-4 md:gap-0">
@@ -193,7 +195,7 @@ const ProgramCleaniqueAcademy = () => {
       {/* ./ FASILITAS MITRA */}
 
       {/* ALUR PENDAFTARAN */}
-      <section className="px-4 py-20  bg-[#1c643f]">
+      <section className="px-4 py-20 bg-[url('/v2/background2.png')] bg-cover bg-center bg-no-repeat">
         <div className="container flex flex-col items-center gap-10">
           {/* TITLE */}
           <h2 className="text-2xl md:text-3xl font-black uppercase text-center text-white">
