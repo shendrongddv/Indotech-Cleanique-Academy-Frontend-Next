@@ -1,10 +1,12 @@
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowRight, ArrowUpRightFromSquareIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FAQ } from "./sections/faq";
 import TestimoniMitra from "./program-ca-old/_sections/testimoni-mitra";
+import ReactPlayer from "react-player";
+import VideoPlayer from "@/components/video-player";
 
 export default function Homepage() {
   return (
@@ -12,7 +14,8 @@ export default function Homepage() {
       {/* HERO */}
       <section className="py-20 px-4">
         <div className="container flex flex-col-reverse md:flex-row items-center justify-between">
-          <div className="w-full md:w-6/12 flex flex-col gap-6 items-start">
+          {/* COL */}
+          <div className="w-full md:w-5/12 flex flex-col gap-6 items-start">
             <h1 className="md:text-4xl font-black text-balance text-2xl">
               #GROWYOURSELFWITHUS!
             </h1>
@@ -24,18 +27,24 @@ export default function Homepage() {
               permodalan usaha bagi calon mitra Cleanique Academy yang nantinya
               akan dibimbing oleh mentor dengan status kemitraan seumur hidup.
             </p>
+
+            <Link
+              href="https://app.cleaniqueacademy.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "w-full md:w-auto bg-[#1E4291] border-b-2 border-white shadow-lg"
+              )}
+            >
+              Daftar Sekarang
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
           </div>
 
-          <div className="w-full md:w-5/12">
-            <figure className="flex justify-center items-center aspect-square">
-              <Image
-                src="/01J141J72D567BMPF7QT5EJVQK.png"
-                alt="Image"
-                width={1024}
-                height={582}
-                className="w-full h-auto"
-              />
-            </figure>
+          {/* COL */}
+          <div className="w-full md:w-6/12">
+            <VideoPlayer />
           </div>
         </div>
       </section>
@@ -175,11 +184,11 @@ export default function Homepage() {
       {/* SYARAT */}
       {/* <section className="py-20 px-4 bg-slate-100">
         <div className="container flex flex-col justify-center items-center gap-16">
-          <h2 className="font-medium text-2xl md:text-4xl md:w-1/2 text-center">
-            Apa saja syarat keikutsertaan mahasiswa?
-          </h2>
+            <h2 className="font-medium text-2xl md:text-4xl md:w-1/2 text-center">
+                Apa saja syarat keikutsertaan mahasiswa?
+            </h2>
         </div>
-      </section> */}
+    </section> */}
       {/* ./ SYARAT */}
 
       {/* Testimoni Mitra */}
